@@ -6,13 +6,7 @@ import os
 
 # Create a new Discord bot client
 
-intents = discord.Intents.default()
-intents.members = True
-intents.guilds = True
-intents.bans = True
-intents.emojis = True
-intents.reactions = True
-intents.typing = True
+intents = discord.Intents(messages=True, guilds=True, message_content=True, members=True, guild_reactions=True, dm_reactions=True, presences=True, reactions=True, typing=True, voice_states=True, webhooks=True)
 client = commands.Bot(command_prefix='!', intents=intents)
 
 # Define a command to get the holiday information
