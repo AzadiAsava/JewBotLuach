@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 from datetime import datetime
-from pyluach import dates
+from pyluach import dates, hebrewcal, parshios
 import os
 
 # Create a new Discord bot client
