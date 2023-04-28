@@ -3,7 +3,7 @@ from discord.ext import commands
 from datetime import datetime
 from pyluach import dates, hebrewcal, parshios
 import os
-import hebew_calendar
+import hebrew_calendar
 # Create a new Discord bot client
 
 intents = discord.Intents(messages=True, guilds=True, message_content=True, members=True, guild_reactions=True, dm_reactions=True, presences=True, reactions=True, typing=True, voice_states=True, webhooks=True)
