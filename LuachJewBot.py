@@ -12,11 +12,11 @@ client = commands.Bot(command_prefix='!', intents=intents)
 # Define a command to get the holiday information
 @client.command()
 async def holiday(ctx, holiday_name):
-    message = hebew_calendar.get_current_holiday()
+    message = hebrew_calendar.get_current_holiday()
     # Send the message to the Discord channel
     await ctx.send(message)
 
 # Run the bot
-client.run(os.environ.get('JewBotLuachDiscordToken'))
+client.run(os.environ.get('JewBotLuach'))
 
 
